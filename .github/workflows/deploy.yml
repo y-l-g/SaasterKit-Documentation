@@ -1,3 +1,5 @@
+# .github/workflows/deploy.yml
+
 name: deploy
 run-name: deploy
 
@@ -45,4 +47,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          branch: gh-pages
           folder: ./.output/public
